@@ -23,7 +23,7 @@ def calcICC(paciente):
     #tratar string
     paciente = paciente.replace(" ", "")
     paciente = paciente.replace(".", "")
-    paciente = paciente.swapcase()
+    paciente = paciente.upper()
     comorb = paciente.split(',')
     #calcular peso-comorbidades
     for cid in comorb:
